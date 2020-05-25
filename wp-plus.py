@@ -4,19 +4,11 @@ import datetime
 import random
 import string
 import time
-print ('      _______ _      __________________       _______ _______ _______ _______\n'
-'     (  ___  | \     \__   __|__   __( \     (  ___  |  ____ |  ____ |  ___  )\n'
-'     | (   ) | (        ) (     ) (  | (     | (   ) | (    )| (    )| (   ) |\n'
-'     | (___) | |        | |     | |  | |     | (___) | (____)| (____)| |   | |\n'
-'     |  ___  | |        | |     | |  | |     |  ___  |  _____)     __) |   | |\n'
-'     | (   ) | |        | |     | |  | |     | (   ) | (     | (\ (  | |   | |\n'
-'     | )   ( | (____/\__) (_____) (__| (____/\ )   ( | )     | ) \ \_| (___) |\n'
-'     |/     \(_______|_______|_______(_______//     \|/      |/   \__(_______)\n')
-print ("-----------------------------------------------------------------------------")
+
 print ("[?] Q; How to find a WARP+ ID?")
 print ("[-] A; Go this route and copy the WARP+ ID => Setting/Advanced/Diagnostics/ID")
 print ("-----------------------------------------------------------------------------")
-print ("This script is coded by aliilapro [ aliilapro.github.io ]") 
+print ("This script is coded Arman_HC") 
 print ("-----------------------------------------------------------------------------")
 referrer = input("Enter the WARP+ ID: ")
 def genString(stringLength):
@@ -49,9 +41,9 @@ c = 1
 while True:
     result = run()
     if result.status_code == 200:
-        print(f"\n{c} GB has been successfully added to your account.")
+        print(f"\n{c - 1} GB has been successfully added to your account.")
         c = c + 1
-        time.sleep(20)
+        time.sleep(5)
     else:
         print("Error when connecting to server.")
 
