@@ -7,9 +7,9 @@ import time
 
 print ("[?] Q; How to find a WARP+ ID?")
 print ("[-] A; Go this route and copy the WARP+ ID => Setting/Advanced/Diagnostics/ID")
-print ("-----------------------------------------------------------------------------")
-print ("This script is coded Arman_HC") 
-print ("-----------------------------------------------------------------------------")
+print ("---------------------------------------")
+print ("   This script is coded By Arman_HC") 
+print ("---------------------------------------")
 referrer = input("Enter the WARP+ ID: ")
 def genString(stringLength):
     letters = string.ascii_letters + string.digits
@@ -43,7 +43,7 @@ while True:
     if result.status_code == 200:
         print(f"\n{c - 1} GB has been successfully added to your account.")
         c = c + 1
-        time.sleep(20)
+        time.sleep(2)
     else:
         print("Error when connecting to server.")
 
