@@ -4,13 +4,20 @@ import datetime
 import random
 import string
 import time
-
-print ("-------------------------------")
+print ('      _______ _      __________________       _______ _______ _______ _______\n'
+'     (  ___  | \     \__   __|__   __( \     (  ___  |  ____ |  ____ |  ___  )\n'
+'     | (   ) | (        ) (     ) (  | (     | (   ) | (    )| (    )| (   ) |\n'
+'     | (___) | |        | |     | |  | |     | (___) | (____)| (____)| |   | |\n'
+'     |  ___  | |        | |     | |  | |     |  ___  |  _____)     __) |   | |\n'
+'     | (   ) | |        | |     | |  | |     | (   ) | (     | (\ (  | |   | |\n'
+'     | )   ( | (____/\__) (_____) (__| (____/\ )   ( | )     | ) \ \_| (___) |\n'
+'     |/     \(_______|_______|_______(_______//     \|/      |/   \__(_______)\n')
+print ("-----------------------------------------------------------------------------")
 print ("[?] Q; How to find a WARP+ ID?")
 print ("[-] A; Go this route and copy the WARP+ ID => Setting/Advanced/Diagnostics/ID")
-print ("--------------------------------")
-print ("This script is coded by Arman_HC") 
-print ("--------------------------------")
+print ("-----------------------------------------------------------------------------")
+print ("This script is coded by aliilapro [ aliilapro.github.io ]") 
+print ("-----------------------------------------------------------------------------")
 referrer = input("Enter the WARP+ ID: ")
 def genString(stringLength):
     letters = string.ascii_letters + string.digits
@@ -18,7 +25,7 @@ def genString(stringLength):
 def digitString(stringLength):
     digit = string.digits
     return ''.join((random.choice(digit) for i in range(stringLength)))    
-url = 'http://api.cloudflareclient.com/v0a{digitString(3)}/reg'
+url = f'http://api.cloudflareclient.com/v0a{digitString(3)}/reg'
 def run():
     install_id = genString(11)
     body = {"key": "{}=".format(genString(42)),
@@ -42,7 +49,7 @@ c = 1
 while True:
     result = run()
     if result.status_code == 200:
-        print("\n{c} GB has been successfully added to your account.")
+        print(f"\n{c} GB has been successfully added to your account.")
         c = c + 1
         time.sleep(20)
     else:
