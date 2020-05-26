@@ -5,11 +5,12 @@ import random
 import string
 import time
 
+print ("-------------------------------")
 print ("[?] Q; How to find a WARP+ ID?")
 print ("[-] A; Go this route and copy the WARP+ ID => Setting/Advanced/Diagnostics/ID")
-print ("---------------------------------------")
-print ("   This script is coded By Arman_HC") 
-print ("---------------------------------------")
+print ("--------------------------------")
+print ("This script is coded by Arman_HC") 
+print ("--------------------------------")
 referrer = input("Enter the WARP+ ID: ")
 def genString(stringLength):
     letters = string.ascii_letters + string.digits
@@ -41,7 +42,7 @@ c = 1
 while True:
     result = run()
     if result.status_code == 200:
-        print("\n{c - 1} GB has been successfully added to your account.")
+        print("\n{c} GB has been successfully added to your account.")
         c = c + 1
         time.sleep(20)
     else:
