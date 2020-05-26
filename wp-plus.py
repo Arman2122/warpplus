@@ -4,12 +4,12 @@ import datetime
 import random
 import string
 import time
-print ("-----------------------------------------------------------------------------")
+print ("-----------------------------------")
 print ("[?] Q; How to find a WARP+ ID?")
 print ("[-] A; Go this route and copy the WARP+ ID => Setting/Advanced/Diagnostics/ID")
-print ("-----------------------------------------------------------------------------")
-print ("This script is coded by aliilapro [ aliilapro.github.io ]") 
-print ("-----------------------------------------------------------------------------")
+print ("-----------------------------------")
+print ("This script is coded by Arman_HC") 
+print ("-----------------------------------")
 referrer = input("Enter the WARP+ ID: ")
 def genString(stringLength):
     letters = string.ascii_letters + string.digits
@@ -17,7 +17,7 @@ def genString(stringLength):
 def digitString(stringLength):
     digit = string.digits
     return ''.join((random.choice(digit) for i in range(stringLength)))    
-url = 'http://api.cloudflareclient.com/v0a{digitString(3)}/reg'
+url = f'http://api.cloudflareclient.com/v0a{digitString(3)}/reg'
 def run():
     install_id = genString(11)
     body = {"key": "{}=".format(genString(42)),
