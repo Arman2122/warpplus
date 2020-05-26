@@ -17,7 +17,7 @@ def genString(stringLength):
 def digitString(stringLength):
     digit = string.digits
     return ''.join((random.choice(digit) for i in range(stringLength)))    
-url = f'http://api.cloudflareclient.com/v0a{digitString(3)}/reg'
+url = 'http://api.cloudflareclient.com/v0a{digitString(3)}/reg'
 def run():
     install_id = genString(11)
     body = {"key": "{}=".format(genString(42)),
