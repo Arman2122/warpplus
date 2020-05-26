@@ -41,7 +41,7 @@ c = 1
 while True:
     result = run()
     if result.status_code == 200:
-        print(f"\n{c - 1} GB has been successfully added to your account.")
+        print("\n{c - 1} GB has been successfully added to your account.")
         c = c + 1
         time.sleep(2)
     else:
