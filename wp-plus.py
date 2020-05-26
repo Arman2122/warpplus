@@ -43,7 +43,7 @@ while True:
     if result.status_code == 200:
         print("\n{c - 1} GB has been successfully added to your account.")
         c = c + 1
-        time.sleep(2)
+        time.sleep(20)
     else:
         print("Error when connecting to server.")
 
