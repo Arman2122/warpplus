@@ -8,7 +8,7 @@ print ("-----------------------------------")
 print ("[?] Q; How to find a WARP+ ID?")
 print ("[-] A; Go this route and copy the WARP+ ID => Setting/Advanced/Diagnostics/ID")
 print ("-----------------------------------")
-print ("This script is coded by Arman_HC") 
+print ("          By  Arman_HC") 
 print ("-----------------------------------")
 referrer = input("Enter the WARP+ ID: ")
 def genString(stringLength):
